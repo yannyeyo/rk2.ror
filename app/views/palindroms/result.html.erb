@@ -1,0 +1,41 @@
+<head>
+    <style>
+        tr, th, td {
+            border: 1px solid black;
+            }
+        .tab{
+            height:40%;
+            width:100%;
+            border: 1px solid black;
+            }
+    </style>
+</head>
+
+<body>
+<h2>Курицын Ян, ИУ6-35Б, Вариант 21</h2>
+<h2>Задание: Дана строка, содержащая числа через пробел. Удалить числа,стоящие на позициях, значения которых записаны в 1м и 2м числе</h2>
+<h3>Таблица с результатами</h3>
+<table class = "tab">
+    <tr>
+    <th>Введенная строка</th>
+    </tr>
+    <% @res_arr.each do |elem|%>
+    <tr>
+        <td><%= elem %></td>
+    </tr>
+    <% end%>
+</table>
+
+<table class = "tab1">
+    <tr>
+    <th>Итоговая строка</th>
+    </tr>
+    <% @res1_arr.each do |elem1|%>
+    <tr>
+        <td><%= elem1 %></td>
+    </tr>
+    <% end%>
+</table>
+
+<%= link_to "Вернуться назад", home_path %>
+</body>

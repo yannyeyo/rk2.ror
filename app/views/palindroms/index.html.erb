@@ -1,0 +1,7 @@
+<h3>Задание:</h3> 
+<h4>Форма</h4>
+<%= form_with url: "palindroms/result", method: :get do |form| %>
+  <p><%= form.label :query, "Введите строку для обработки" %></p>
+  <p><%= form.text_field(:string) %></p>
+  <p><%= form.submit "Найти" %></p>
+<% end %>
